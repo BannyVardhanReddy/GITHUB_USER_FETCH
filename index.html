@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GITHUB Fetch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GITHUB USER FETCH</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="container">
-        <div class="text-input">
-            <input type="text" name="name" id="name">
-            <button id = "submit" type="submit">Submit</button>
-        </div>
-        <div id="output">
-            <p id="loading-msg"></p>
-            <p id="output-msg"></p>
-            <div id="repo"></div>
-        </div>
+  <div class="page">
+    <h1>GITHUB USER FETCH</h1>
+    <div class="input-section">
+      <input type="text" name="username" id="username" placeholder="Enter your user name">
+      <button id = "search">Seacrch</button>
     </div>
-    <script src="script.js"></script>
+    <span id="loading"></span>
+    <div class="output">
+      <h2>User Details</h2>
+      <div class="details">
+        <div id="name"></div>
+        <div id="avatar"></div>
+      </div>
+      <h2>Repositories</h2>
+      <div class="repos" id="repos"></div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
 </body>
-
 </html>
